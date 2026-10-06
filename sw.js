@@ -1,5 +1,5 @@
 /* Offline cache. Bump CACHE when any file changes so phones pick up the update. */
-var CACHE = 'fit-tracker-1.0.1';
+var CACHE = 'fit-tracker-1.0.2';
 var FILES = ['./', 'index.html', 'styles.css', 'app.js', 'data.js', 'manifest.webmanifest', 'vendor/exceljs.min.js',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-maskable-512.png', 'icons/apple-touch-icon.png'];
 self.addEventListener('install', function (e) {

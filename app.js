@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var KEY = 'fit-tracker.v1';
-  var APP_VERSION = '1.0.1';
+  var APP_VERSION = '1.0.2';
   var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
   var MEALS = ['Breakfast', 'Lunch', 'Snack', 'Dinner', 'Evening'];
   var EXPORT_WEEKS = 39;
@@ -210,7 +210,7 @@
     var any = false;
     P().sessions.forEach(function (s, si) {
       if (s.off !== wd(cur)) return; any = true;
-      h += '<div class="card"><h2>' + esc(s.name) + '</h2><p class="sub" style="margin:0">Warm up 5 minutes first. Fill kg (or plate number) and ' + 'reps for each set.</p>';
+      h += '<div class="card"><h2>' + esc(s.name) + '</h2><p class="sub" style="margin:0">Warm up 5 minutes first. Fill lb (or plate number) and ' + 'reps for each set.</p>';
       s.ex.forEach(function (ex) { h += exCard(ex, w, si); });
       h += '</div>';
     });
@@ -227,15 +227,15 @@
     var n = Math.min(4, Math.max(t, (rec.sets || []).length)), rows = '';
     for (var i = 0; i < n; i++) {
       var s = (rec.sets || [])[i] || {};
-      rows += '<div class="n">' + (i + 1) + '</div><input type="number" inputmode="decimal" step="0.5" aria-label="Set ' + (i + 1) + ' kg" data-s="' + esc(k) + '" data-i="' + i + '" data-f="kg" value="' + esc(s.kg == null ? '' : s.kg) + '">' +
+      rows += '<div class="n">' + (i + 1) + '</div><input type="number" inputmode="decimal" step="any" aria-label="Set ' + (i + 1) + ' lb" data-s="' + esc(k) + '" data-i="' + i + '" data-f="kg" value="' + esc(s.kg == null ? '' : s.kg) + '">' +
         '<input type="number" inputmode="numeric" aria-label="Set ' + (i + 1) + ' ' + unitLabel(ex.unit) + '" data-s="' + esc(k) + '" data-i="' + i + '" data-f="reps" value="' + esc(s.reps == null ? '' : s.reps) + '">';
     }
     var cue = cueFor(ex, w, rec);
     return '<div class="ex" data-exwrap="' + esc(k) + '" data-exid="' + ex.id + '" data-si="' + si + '">' + head +
-      '<div class="sub">' + t + ' sets × ' + range + ' ' + esc(ex.unit) + (prev ? ' · last week ' + prev + ' kg' : '') + '</div>' +
+      '<div class="sub">' + t + ' sets × ' + range + ' ' + esc(ex.unit) + (prev ? ' · last week ' + prev + ' lb' : '') + '</div>' +
       (ex.note ? '<div class="sub">' + esc(ex.note) + '</div>' : '') + '</div>' +
       '<button class="play" data-act="video" data-ex="' + ex.id + '">▶ Video</button></div>' +
-      '<div class="sets"><div class="h">Set</div><div class="h">Kg</div><div class="h">' + unitLabel(ex.unit) + '</div>' + rows + '</div>' +
+      '<div class="sets"><div class="h">Set</div><div class="h">Lb</div><div class="h">' + unitLabel(ex.unit) + '</div>' + rows + '</div>' +
       (n < 4 ? '<button class="btn small" style="margin-top:8px" data-act="addset" data-k="' + esc(k) + '">+ Set</button>' : '') +
       '<div class="meta">' + field(P().limitLabel, 'type="number" inputmode="numeric" min="0" max="10" data-s="' + esc(k) + '" data-f="eff"', rec.eff) +
       field('Notes', 'type="text" data-s="' + esc(k) + '" data-f="notes"', rec.notes) + '</div>' +
@@ -452,7 +452,7 @@
 
     // Strength Log
     var sl = sheet('Strength Log', [['Week', 6], ['Date', 12], ['Day', 5], ['Session', 12], ['Exercise', 36], ['Unit', 9], ['Rep low', 6], ['Rep high', 6], ['Base sets', 6], ['Target sets', 7],
-      ['S1 kg', 7], ['S1 reps', 7], ['S2 kg', 7], ['S2 reps', 7], ['S3 kg', 7], ['S3 reps', 7], ['S4 kg', 7], ['S4 reps', 7], [pl.limitLabel, 9], ['Last week best kg', 9], ['Cue', 30], ['Notes', 30]],
+      ['S1 lb', 7], ['S1 reps', 7], ['S2 lb', 7], ['S2 reps', 7], ['S3 lb', 7], ['S3 reps', 7], ['S4 lb', 7], ['S4 reps', 7], [pl.limitLabel, 9], ['Last week best lb', 9], ['Cue', 30], ['Notes', 30]],
       'Strength Log', 'Exported from the Fit Tracker app. Target sets 0 = exercise not due that week.', [11, 12, 13, 14, 15, 16, 17, 18, 19, 22]);
     for (w = 1; w <= lastWeek; w++) pl.sessions.forEach(function (s, si) {
       s.ex.forEach(function (ex) {

@@ -58,7 +58,7 @@ window.PLANS = {
       "lo": 8,
       "hi": 12,
       "base": 3,
-      "note": "kg per dumbbell",
+      "note": "lb per dumbbell",
       "tier": "core",
       "vid": "qEwKCR5JCog",
       "q": "Seated DB shoulder press proper form"
@@ -82,7 +82,7 @@ window.PLANS = {
       "lo": 12,
       "hi": 15,
       "base": 2,
-      "note": "kg per dumbbell",
+      "note": "lb per dumbbell",
       "tier": "later",
       "vid": "ssAo_xwFt5c",
       "q": "DB lateral raise proper form"
@@ -125,7 +125,7 @@ window.PLANS = {
       "lo": 8,
       "hi": 10,
       "base": 3,
-      "note": "kg per dumbbell",
+      "note": "lb per dumbbell",
       "tier": "core",
       "vid": "hQgFixeXdZo",
       "q": "DB Romanian deadlift proper form"
@@ -204,7 +204,7 @@ window.PLANS = {
       "lo": 8,
       "hi": 12,
       "base": 3,
-      "note": "kg per dumbbell",
+      "note": "lb per dumbbell",
       "tier": "core",
       "vid": "hChjZQhX1Ls",
       "q": "Incline DB press proper form"
@@ -252,7 +252,7 @@ window.PLANS = {
       "lo": 12,
       "hi": 12,
       "base": 2,
-      "note": "kg per dumbbell",
+      "note": "lb per dumbbell",
       "tier": "later",
       "vid": "6DeLZ6cbgWQ",
       "q": "dumbbell bicep curl proper form"
@@ -331,7 +331,7 @@ window.PLANS = {
       "lo": 40,
       "hi": 40,
       "base": 3,
-      "note": "kg per dumbbell",
+      "note": "lb per dumbbell",
       "tier": "later",
       "vid": "8OtwXwrJizk",
       "q": "Farmer carry proper form"
@@ -1157,7 +1157,7 @@ window.PLANS = {
       "lo": 10,
       "hi": 12,
       "base": 3,
-      "note": "kg per dumbbell",
+      "note": "lb per dumbbell",
       "tier": "core",
       "vid": "hChjZQhX1Ls",
       "q": "Incline DB press proper form"
@@ -1181,7 +1181,7 @@ window.PLANS = {
       "lo": 10,
       "hi": 12,
       "base": 2,
-      "note": "kg per dumbbell",
+      "note": "lb per dumbbell",
       "tier": "later",
       "vid": "hQgFixeXdZo",
       "q": "DB Romanian deadlift proper form"
@@ -1248,7 +1248,7 @@ window.PLANS = {
       "lo": 12,
       "hi": 15,
       "base": 3,
-      "note": "Light. kg per dumbbell",
+      "note": "Light. lb per dumbbell",
       "tier": "core",
       "vid": "ssAo_xwFt5c",
       "q": "DB lateral raise proper form"
@@ -1272,7 +1272,7 @@ window.PLANS = {
       "lo": 30,
       "hi": 30,
       "base": 2,
-      "note": "kg per dumbbell. Keep breathing",
+      "note": "lb per dumbbell. Keep breathing",
       "tier": "later",
       "vid": "8OtwXwrJizk",
       "q": "Farmer carry proper form"
