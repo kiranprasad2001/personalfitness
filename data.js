@@ -192,7 +192,7 @@ window.PLANS = {
       "lo": 10,
       "hi": 12,
       "base": 3,
-      "note": "",
+      "note": "Adjustable pulley column, carriage at the lowest hole. Sit on a bench facing it, knees soft",
       "tier": "core",
       "vid": "GZbfZ033f74",
       "q": "seated cable row proper form"
@@ -211,15 +211,15 @@ window.PLANS = {
      },
      {
       "id": "rear-delt-fly-pec-fly-reversed",
-      "name": "Rear delt fly (pec fly reversed)",
+      "name": "Chest-supported DB reverse fly",
       "unit": "reps",
       "lo": 15,
       "hi": 15,
       "base": 3,
-      "note": "",
+      "note": "Lie face down on the bench at 30-45°. Light dumbbells, raise arms wide to shoulder height. lb per dumbbell",
       "tier": "core",
-      "vid": "EvE4MoJaDHw",
-      "q": "reverse pec deck rear delt fly proper form"
+      "vid": "7pE90Lysxss",
+      "q": "chest supported dumbbell reverse fly"
      },
      {
       "id": "captain-s-chair-knee-raise",
@@ -1145,7 +1145,7 @@ window.PLANS = {
       "lo": 10,
       "hi": 15,
       "base": 3,
-      "note": "",
+      "note": "Adjustable pulley column, carriage at the lowest hole. Sit on a bench facing it, knees soft",
       "tier": "core",
       "vid": "GZbfZ033f74",
       "q": "seated cable row proper form"

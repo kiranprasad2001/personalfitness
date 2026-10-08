@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var KEY = 'fit-tracker.v1';
-  var APP_VERSION = '1.0.2';
+  var APP_VERSION = '1.0.3';
   var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
   var MEALS = ['Breakfast', 'Lunch', 'Snack', 'Dinner', 'Evening'];
   var EXPORT_WEEKS = 39;
