@@ -29,15 +29,15 @@ window.PLANS = {
     "ex": [
      {
       "id": "chest-press-hoist-station",
-      "name": "Chest press (Hoist station)",
+      "name": "Flat DB bench press",
       "unit": "reps",
       "lo": 8,
       "hi": 12,
       "base": 3,
-      "note": "",
+      "note": "Flat bench. Sit with dumbbells on thighs, lie back and press. lb per dumbbell",
       "tier": "core",
-      "vid": "B-zyH8OTlsg",
-      "q": "machine chest press proper form"
+      "vid": "M0tN99QgPyU",
+      "q": "flat dumbbell bench press"
      },
      {
       "id": "lat-pulldown",
